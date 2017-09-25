@@ -1,0 +1,271 @@
+2017-09-23 10:17:55.8916|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-09-23 10:17:56.2295|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [27] successful, user authenticated
+2017-09-23 10:17:56.2770|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [27]
+2017-09-23 10:17:56.3511|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [27]
+2017-09-23 10:35:57.8425|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-09-23 10:35:57.9311|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [27] successful, user authenticated
+2017-09-23 10:35:57.9604|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [27]
+2017-09-23 10:35:58.0306|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [27]
+2017-09-23 10:36:38.2569|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-09-23 10:36:38.3115|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [27] successful, user authenticated
+2017-09-23 10:36:38.3459|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [27]
+2017-09-23 10:36:38.3859|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [27]
+2017-09-23 10:44:08.0708|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-09-23 10:44:08.1522|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [27] successful, user authenticated
+2017-09-23 10:44:08.1522|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [27]
+2017-09-23 10:44:08.1813|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [27]
+2017-09-23 10:50:33.9821|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-09-23 10:50:34.3371|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [27] successful, user authenticated
+2017-09-23 10:50:34.3878|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [27]
+2017-09-23 10:50:34.4175|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [27]
+2017-09-23 10:53:16.2107|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-09-23 10:53:16.3309|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [27] successful, user authenticated
+2017-09-23 10:53:16.3534|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [27]
+2017-09-23 10:53:16.3651|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [27]
+2017-09-23 10:53:20.4416|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [27]
+2017-09-23 10:53:20.5544|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [27] successful, user found
+2017-09-23 10:53:20.5891|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [27]
+2017-09-23 10:53:20.6196|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [27]
+2017-09-23 10:54:22.2031|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-09-23 10:54:22.3618|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [27] successful, user authenticated
+2017-09-23 10:54:22.4241|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [27]
+2017-09-23 10:54:22.4880|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [27]
+2017-09-23 10:54:25.3598|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [27]
+2017-09-23 10:54:25.4113|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [27] successful, user found
+2017-09-23 10:54:25.4435|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [27]
+2017-09-23 10:54:25.4596|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [27]
+2017-09-23 10:54:43.8842|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-09-23 10:54:43.9421|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [27] successful, user authenticated
+2017-09-23 10:54:44.0101|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [27]
+2017-09-23 10:54:44.0699|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [27]
+2017-09-23 10:58:43.4301|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-09-23 10:58:43.5124|INFO|CoreUserService.Controllers.UserController|Login attempt for username [rtom] failed, invalid credentials
+2017-09-23 10:58:52.4873|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-09-23 10:58:52.5210|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [27] successful, user authenticated
+2017-09-23 10:58:52.5659|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [27]
+2017-09-23 10:58:52.6172|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [27]
+2017-09-23 10:58:54.8346|INFO|CoreUserService.Controllers.UserController|Begin delete attempt for user id [27]
+2017-09-23 10:58:54.9436|INFO|CoreUserService.Controllers.UserController|Delete attempt for user id [27] successful, user soft deleted
+2017-09-23 10:58:57.0677|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-09-23 10:58:57.1563|INFO|CoreUserService.Controllers.UserController|Login attempt for username [rtom] failed, invalid credentials
+2017-09-23 10:59:03.6636|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [27]
+2017-09-23 10:59:03.6962|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [27] failed, user not found
+2017-09-23 11:00:20.5844|INFO|CoreUserService.Controllers.UserController|Begin create attempt for new user
+2017-09-23 11:00:20.8214|INFO|CoreUserService.Controllers.UserController|Create attempt for new user id [28] successful, user created
+2017-09-23 11:00:20.8715|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [28]
+2017-09-23 11:00:20.9204|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [28]
+2017-09-23 11:00:25.0609|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [28]
+2017-09-23 11:00:25.0942|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [28] successful, user found
+2017-09-23 11:00:25.1045|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [28]
+2017-09-23 11:00:25.1406|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [28]
+2017-09-23 11:00:32.9831|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom2]
+2017-09-23 11:00:33.0940|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [28] successful, user authenticated
+2017-09-23 11:00:33.1244|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [28]
+2017-09-23 11:00:33.1591|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [28]
+2017-09-23 11:02:15.7069|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [26]
+2017-09-23 11:02:15.7926|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [26] successful, user found
+2017-09-23 11:02:15.8443|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [26]
+2017-09-23 11:02:15.8961|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [26]
+2017-09-23 11:02:20.6834|INFO|CoreUserService.Controllers.UserController|Begin delete attempt for user id [26]
+2017-09-23 11:02:20.7952|INFO|CoreUserService.Controllers.UserController|Delete attempt for user id [26] successful, user soft deleted
+2017-09-23 11:02:54.6463|INFO|CoreUserService.Controllers.UserController|Begin delete attempt for user id [25]
+2017-09-23 11:02:55.5156|ERROR|CoreUserService.Services.JwtTokenIssuerService|User id [26] attempted to access an unauthorized resource for user id [25]
+2017-09-23 11:02:57.4681|INFO|CoreUserService.Controllers.UserController|Delete attempt for user id [25] failed, not authorized
+2017-09-23 11:03:11.9386|INFO|CoreUserService.Controllers.UserController|Begin delete attempt for user id [22]
+2017-09-23 11:03:11.9877|ERROR|CoreUserService.Services.JwtTokenIssuerService|User id [26] attempted to access an unauthorized resource for user id [22]
+2017-09-23 11:03:12.0232|INFO|CoreUserService.Controllers.UserController|Delete attempt for user id [22] failed, not authorized
+2017-09-23 11:03:13.7988|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom2]
+2017-09-23 11:03:13.8672|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [28] successful, user authenticated
+2017-09-23 11:03:13.8992|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [28]
+2017-09-23 11:03:13.9137|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [28]
+2017-09-23 11:03:26.9732|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [28]
+2017-09-23 11:03:26.9996|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [28] successful, user found
+2017-09-23 11:03:27.0403|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [28]
+2017-09-23 11:03:27.0522|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [28]
+2017-09-23 11:03:32.3543|INFO|CoreUserService.Controllers.UserController|Begin delete attempt for user id [27]
+2017-09-23 11:03:32.3723|ERROR|CoreUserService.Services.JwtTokenIssuerService|User id [28] attempted to access an unauthorized resource for user id [27]
+2017-09-23 11:03:32.4225|INFO|CoreUserService.Controllers.UserController|Delete attempt for user id [27] failed, not authorized
+2017-09-23 11:03:38.9200|INFO|CoreUserService.Controllers.UserController|Begin delete attempt for user id [26]
+2017-09-23 11:03:38.9586|ERROR|CoreUserService.Services.JwtTokenIssuerService|User id [28] attempted to access an unauthorized resource for user id [26]
+2017-09-23 11:03:38.9738|INFO|CoreUserService.Controllers.UserController|Delete attempt for user id [26] failed, not authorized
+2017-09-23 11:05:03.2876|INFO|CoreUserService.Controllers.UserController|Begin create attempt for new user
+2017-09-23 11:05:03.9075|INFO|CoreUserService.Controllers.UserController|Create attempt for new user id [29] successful, user created
+2017-09-23 11:05:03.9459|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [29]
+2017-09-23 11:05:03.9781|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [29]
+2017-09-23 11:05:10.7988|INFO|CoreUserService.Controllers.UserController|Begin create attempt for new user
+2017-09-23 11:05:10.8844|INFO|CoreUserService.Controllers.UserController|Create attempt for new user id [30] successful, user created
+2017-09-23 11:05:10.9233|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [30]
+2017-09-23 11:05:10.9500|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [30]
+2017-09-23 11:05:21.6147|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom3]
+2017-09-23 11:05:21.7448|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [29] successful, user authenticated
+2017-09-23 11:05:21.7950|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [29]
+2017-09-23 11:05:21.8441|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [29]
+2017-09-23 11:05:25.8327|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom4]
+2017-09-23 11:05:25.8802|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [30] successful, user authenticated
+2017-09-23 11:05:25.9332|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [30]
+2017-09-23 11:05:25.9956|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [30]
+2017-09-23 11:05:30.8749|INFO|CoreUserService.Controllers.UserController|Begin delete attempt for user id [30]
+2017-09-23 11:05:31.0171|INFO|CoreUserService.Controllers.UserController|Delete attempt for user id [30] successful, user soft deleted
+2017-09-23 11:05:46.7457|INFO|CoreUserService.Controllers.UserController|Begin create attempt for new user
+2017-09-23 11:05:46.8737|INFO|CoreUserService.Controllers.UserController|Create attempt for new user id [31] successful, user created
+2017-09-23 11:05:46.8878|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [31]
+2017-09-23 11:05:46.9180|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [31]
+2017-09-23 11:05:51.6960|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom3]
+2017-09-23 11:05:51.7891|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [29] successful, user authenticated
+2017-09-23 11:05:51.8228|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [29]
+2017-09-23 11:05:51.8540|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [29]
+2017-09-23 11:06:01.6302|INFO|CoreUserService.Controllers.UserController|Begin delete attempt for user id [31]
+2017-09-23 11:06:32.1974|ERROR|CoreUserService.Services.JwtTokenIssuerService|User id [29] attempted to access an unauthorized resource for user id [31]
+2017-09-23 11:06:36.1457|INFO|CoreUserService.Controllers.UserController|Delete attempt for user id [31] failed, not authorized
+2017-09-23 11:07:01.6344|INFO|CoreUserService.Controllers.UserController|Begin create attempt for new user
+2017-09-23 11:07:01.9165|INFO|CoreUserService.Controllers.UserController|Create attempt for new user id [32] successful, user created
+2017-09-23 11:07:01.9553|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [32]
+2017-09-23 11:07:01.9656|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [32]
+2017-09-23 11:07:08.2843|INFO|CoreUserService.Controllers.UserController|Begin create attempt for new user
+2017-09-23 11:07:08.4664|INFO|CoreUserService.Controllers.UserController|Create attempt for new user id [33] successful, user created
+2017-09-23 11:07:08.4765|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [33]
+2017-09-23 11:07:08.4873|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [33]
+2017-09-23 11:07:15.2476|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom10]
+2017-09-23 11:07:15.3053|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [32] successful, user authenticated
+2017-09-23 11:07:15.3187|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [32]
+2017-09-23 11:07:15.3365|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [32]
+2017-09-23 11:07:18.4135|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom11]
+2017-09-23 11:07:18.4716|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [33] successful, user authenticated
+2017-09-23 11:07:18.4716|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [33]
+2017-09-23 11:07:18.5136|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [33]
+2017-09-23 11:07:25.5979|INFO|CoreUserService.Controllers.UserController|Begin delete attempt for user id [32]
+2017-09-23 11:07:35.0595|ERROR|CoreUserService.Services.JwtTokenIssuerService|User id [33] attempted to access an unauthorized resource for user id [32]
+2017-09-23 11:07:35.1094|INFO|CoreUserService.Controllers.UserController|Delete attempt for user id [32] failed, not authorized
+2017-09-23 11:07:43.4483|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom10]
+2017-09-23 11:07:43.5244|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [32] successful, user authenticated
+2017-09-23 11:07:43.5577|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [32]
+2017-09-23 11:07:43.5707|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [32]
+2017-09-23 11:07:52.8810|INFO|CoreUserService.Controllers.UserController|Begin delete attempt for user id [33]
+2017-09-23 11:08:01.7931|ERROR|CoreUserService.Services.JwtTokenIssuerService|User id [32] attempted to access an unauthorized resource for user id [33]
+2017-09-23 11:08:01.8431|INFO|CoreUserService.Controllers.UserController|Delete attempt for user id [33] failed, not authorized
+2017-09-23 12:53:25.7475|INFO|CoreUserService.Controllers.UserController|Begin create attempt for new user
+2017-09-23 12:53:25.8521|INFO|CoreUserService.Controllers.UserController|Create attempt for new user id [34] successful, user created
+2017-09-23 12:53:25.8758|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [34]
+2017-09-23 12:53:25.8930|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [34]
+2017-09-23 12:53:37.8718|INFO|CoreUserService.Controllers.UserController|Begin create attempt for new user
+2017-09-23 12:53:37.9710|INFO|CoreUserService.Controllers.UserController|Create attempt for new user id [35] successful, user created
+2017-09-23 12:53:37.9853|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [35]
+2017-09-23 12:53:38.0008|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [35]
+2017-09-23 12:53:47.0996|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom33]
+2017-09-23 12:53:47.1498|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [34] successful, user authenticated
+2017-09-23 12:53:47.1834|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [34]
+2017-09-23 12:53:47.2174|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [34]
+2017-09-23 12:53:51.3781|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom34]
+2017-09-23 12:53:51.4339|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [35] successful, user authenticated
+2017-09-23 12:53:51.4881|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [35]
+2017-09-23 12:53:51.5216|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [35]
+2017-09-23 12:53:59.5695|INFO|CoreUserService.Controllers.UserController|Begin delete attempt for user id [34]
+2017-09-23 12:54:09.6397|ERROR|CoreUserService.Services.JwtTokenIssuerService|User id [35] attempted to access an unauthorized resource for user id [34]
+2017-09-23 12:54:09.6706|INFO|CoreUserService.Controllers.UserController|Delete attempt for user id [34] failed, not authorized
+2017-09-23 12:54:21.6756|INFO|CoreUserService.Controllers.UserController|Begin delete attempt for user id [33]
+2017-09-23 12:54:21.7065|ERROR|CoreUserService.Services.JwtTokenIssuerService|User id [35] attempted to access an unauthorized resource for user id [33]
+2017-09-23 12:54:21.7361|INFO|CoreUserService.Controllers.UserController|Delete attempt for user id [33] failed, not authorized
+2017-09-23 12:54:25.2840|INFO|CoreUserService.Controllers.UserController|Begin delete attempt for user id [32]
+2017-09-23 12:54:25.3145|ERROR|CoreUserService.Services.JwtTokenIssuerService|User id [35] attempted to access an unauthorized resource for user id [32]
+2017-09-23 12:54:25.3456|INFO|CoreUserService.Controllers.UserController|Delete attempt for user id [32] failed, not authorized
+2017-09-23 12:54:28.9318|INFO|CoreUserService.Controllers.UserController|Begin delete attempt for user id [31]
+2017-09-23 12:54:28.9877|ERROR|CoreUserService.Services.JwtTokenIssuerService|User id [35] attempted to access an unauthorized resource for user id [31]
+2017-09-23 12:54:29.0201|INFO|CoreUserService.Controllers.UserController|Delete attempt for user id [31] failed, not authorized
+2017-09-23 12:54:32.2887|INFO|CoreUserService.Controllers.UserController|Begin delete attempt for user id [10]
+2017-09-23 12:54:32.3554|ERROR|CoreUserService.Services.JwtTokenIssuerService|User id [35] attempted to access an unauthorized resource for user id [10]
+2017-09-23 12:54:32.3850|INFO|CoreUserService.Controllers.UserController|Delete attempt for user id [10] failed, not authorized
+2017-09-23 12:54:36.9481|INFO|CoreUserService.Controllers.UserController|Begin delete attempt for user id [8]
+2017-09-23 12:54:36.9843|ERROR|CoreUserService.Services.JwtTokenIssuerService|User id [35] attempted to access an unauthorized resource for user id [8]
+2017-09-23 12:54:37.0023|INFO|CoreUserService.Controllers.UserController|Delete attempt for user id [8] failed, not authorized
+2017-09-23 12:54:41.6269|INFO|CoreUserService.Controllers.UserController|Begin delete attempt for user id [34]
+2017-09-23 12:54:41.6639|ERROR|CoreUserService.Services.JwtTokenIssuerService|User id [35] attempted to access an unauthorized resource for user id [34]
+2017-09-23 12:54:41.6835|INFO|CoreUserService.Controllers.UserController|Delete attempt for user id [34] failed, not authorized
+2017-09-23 12:54:45.6207|INFO|CoreUserService.Controllers.UserController|Begin delete attempt for user id [35]
+2017-09-23 12:54:45.6670|INFO|CoreUserService.Controllers.UserController|Delete attempt for user id [35] successful, user soft deleted
+2017-09-23 12:56:50.5685|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom2]
+2017-09-23 12:56:50.6807|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [28] successful, user authenticated
+2017-09-23 12:56:50.7210|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [28]
+2017-09-23 12:56:50.7364|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [28]
+2017-09-23 12:58:28.1084|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom2]
+2017-09-23 12:58:28.1658|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [28] successful, user authenticated
+2017-09-23 12:58:28.1846|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [28]
+2017-09-23 12:58:28.1968|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [28]
+2017-09-23 12:58:32.3086|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [28]
+2017-09-23 12:58:32.4172|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [28] successful, user found
+2017-09-23 12:58:32.4741|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [28]
+2017-09-23 12:58:32.4852|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [28]
+2017-09-23 12:59:29.8779|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom2]
+2017-09-23 12:59:29.9311|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [28] successful, user authenticated
+2017-09-23 12:59:29.9962|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [28]
+2017-09-23 12:59:30.0287|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [28]
+2017-09-23 12:59:33.9411|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [28]
+2017-09-23 12:59:34.0249|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [28] successful, user found
+2017-09-23 12:59:34.0750|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [28]
+2017-09-23 12:59:34.1072|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [28]
+2017-09-23 13:06:11.2924|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom2]
+2017-09-23 13:06:11.3435|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [28] successful, user authenticated
+2017-09-23 13:06:11.3947|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [28]
+2017-09-23 13:06:11.4264|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [28]
+2017-09-23 13:06:14.7939|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [28]
+2017-09-23 13:06:14.8579|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [28] successful, user found
+2017-09-23 13:06:14.8885|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [28]
+2017-09-23 13:06:14.9380|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [28]
+2017-09-23 13:06:56.0277|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom2]
+2017-09-23 13:06:56.0477|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [28] successful, user authenticated
+2017-09-23 13:06:56.0911|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [28]
+2017-09-23 13:06:56.1437|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [28]
+2017-09-23 13:06:59.2003|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [28]
+2017-09-23 13:06:59.2931|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [28] successful, user found
+2017-09-23 13:06:59.3471|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [28]
+2017-09-23 13:06:59.3712|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [28]
+2017-09-23 13:07:04.2867|INFO|CoreUserService.Controllers.UserController|Begin update attempt for user id [28]
+2017-09-23 13:07:04.4566|INFO|CoreUserService.Controllers.UserController|Update attempt for user id [28] failed, data validation fail
+2017-09-23 13:07:39.9642|INFO|CoreUserService.Controllers.UserController|Begin update attempt for user id [28]
+2017-09-23 13:08:18.7648|INFO|CoreUserService.Controllers.UserController|Update attempt for user id [28] failed, data validation fail
+2017-09-23 13:08:27.5803|INFO|CoreUserService.Controllers.UserController|Begin update attempt for user id [27]
+2017-09-23 13:08:28.3231|ERROR|CoreUserService.Services.JwtTokenIssuerService|User id [28] attempted to access an unauthorized resource for user id [27]
+2017-09-23 13:08:30.1934|INFO|CoreUserService.Controllers.UserController|Update attempt for user id [27] failed, not authorized
+2017-09-23 13:08:46.7208|INFO|CoreUserService.Controllers.UserController|Begin update attempt for user id [28]
+2017-09-23 13:08:46.8410|INFO|CoreUserService.Controllers.UserController|Update attempt for user id [28] successful, user updated
+2017-09-23 13:08:46.8720|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [28]
+2017-09-23 13:08:46.9038|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [28]
+2017-09-23 13:12:23.6104|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom2]
+2017-09-23 13:12:23.6622|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [28] successful, user authenticated
+2017-09-23 13:12:23.7274|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [28]
+2017-09-23 13:12:23.7748|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [28]
+2017-09-23 13:12:29.6405|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [27]
+2017-09-23 13:12:29.7472|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [27] failed, user not found
+2017-09-23 13:12:34.3425|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [26]
+2017-09-23 13:12:34.3780|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [26] failed, user not found
+2017-09-23 13:12:40.6232|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [1]
+2017-09-23 13:12:40.6605|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [1] failed, user not found
+2017-09-23 13:12:44.1153|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [5]
+2017-09-23 13:12:44.1495|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [5] failed, user not found
+2017-09-23 13:12:47.6482|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [6]
+2017-09-23 13:12:47.6966|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [6] failed, user not found
+2017-09-23 13:12:51.2798|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [7]
+2017-09-23 13:12:51.3499|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [7] failed, user not found
+2017-09-23 13:12:54.6602|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [10]
+2017-09-23 13:12:54.7248|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [10] failed, user not found
+2017-09-23 13:12:58.3232|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [11]
+2017-09-23 13:12:58.4068|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [11] failed, user not found
+2017-09-23 13:13:01.9168|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [12]
+2017-09-23 13:13:02.0045|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [12] failed, user not found
+2017-09-23 13:13:05.8247|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [13]
+2017-09-23 13:13:05.9233|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [13] failed, user not found
+2017-09-23 13:13:26.9382|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [20]
+2017-09-23 13:13:26.9584|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [20] successful, user found
+2017-09-23 13:13:27.0117|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [20]
+2017-09-23 13:13:27.0290|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [20]
+2017-09-23 13:13:35.8888|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [21]
+2017-09-23 13:13:35.9538|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [21] successful, user found
+2017-09-23 13:13:35.9858|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [21]
+2017-09-23 13:13:36.0350|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [21]
+2017-09-23 13:13:44.4680|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom2]
+2017-09-23 13:13:44.5268|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [28] successful, user authenticated
+2017-09-23 13:13:44.5603|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [28]
+2017-09-23 13:13:44.6094|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [28]
+2017-09-23 13:13:47.6596|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [20]
+2017-09-23 13:13:47.7023|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [20] successful, user found
+2017-09-23 13:13:47.7146|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [20]
+2017-09-23 13:13:47.7867|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [20]
