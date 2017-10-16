@@ -1,0 +1,66 @@
+2017-10-13 22:03:25.9066|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [asdfsdf]
+2017-10-13 22:03:27.5774|INFO|CoreUserService.Controllers.UserController|Login attempt for username [asdfsdf] failed, invalid credentials
+2017-10-13 22:03:37.0079|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-10-13 22:03:37.2634|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [36] successful, user authenticated
+2017-10-13 22:03:37.2998|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [36]
+2017-10-13 22:03:37.3513|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [36]
+2017-10-13 22:04:32.3819|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-10-13 22:04:32.5300|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [36] successful, user authenticated
+2017-10-13 22:04:32.6330|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [36]
+2017-10-13 22:04:32.6668|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [36]
+2017-10-13 22:05:23.4147|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-10-13 22:05:23.5564|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [36] successful, user authenticated
+2017-10-13 22:05:23.6226|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [36]
+2017-10-13 22:05:23.6509|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [36]
+2017-10-13 22:06:26.3626|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-10-13 22:06:26.5569|INFO|CoreUserService.Controllers.UserController|Login attempt for username [rtom] failed, invalid credentials
+2017-10-13 22:06:37.8073|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-10-13 22:06:37.9084|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [36] successful, user authenticated
+2017-10-13 22:06:37.9847|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [36]
+2017-10-13 22:06:38.0420|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [36]
+2017-10-13 22:09:37.8626|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-10-13 22:09:38.0742|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [36] successful, user authenticated
+2017-10-13 22:09:38.1306|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [36]
+2017-10-13 22:09:38.1577|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [36]
+2017-10-13 22:16:04.8653|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-10-13 22:16:05.0430|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [36] successful, user authenticated
+2017-10-13 22:16:05.0921|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [36]
+2017-10-13 22:16:05.1277|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [36]
+2017-10-13 22:16:49.8324|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-10-13 22:16:49.9573|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [36] successful, user authenticated
+2017-10-13 22:16:50.0451|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [36]
+2017-10-13 22:16:50.0712|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [36]
+2017-10-13 22:21:33.0249|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-10-13 22:21:33.1876|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [36] successful, user authenticated
+2017-10-13 22:21:33.2548|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [36]
+2017-10-13 22:21:33.3264|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [36]
+2017-10-13 22:21:42.2667|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-10-13 22:21:42.4828|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [36] successful, user authenticated
+2017-10-13 22:21:42.5133|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [36]
+2017-10-13 22:21:42.5365|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [36]
+2017-10-13 22:21:47.1137|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-10-13 22:21:47.2240|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [36] successful, user authenticated
+2017-10-13 22:21:47.3058|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [36]
+2017-10-13 22:21:47.3305|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [36]
+2017-10-13 22:21:56.0321|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-10-13 22:21:56.2393|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [36] successful, user authenticated
+2017-10-13 22:21:56.2825|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [36]
+2017-10-13 22:21:56.3032|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [36]
+2017-10-13 22:23:22.0951|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-10-13 22:23:22.2007|INFO|CoreUserService.Controllers.UserController|Login attempt for username [rtom] failed, invalid credentials
+2017-10-13 22:23:45.2319|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-10-13 22:23:45.4632|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [36] successful, user authenticated
+2017-10-13 22:23:45.5018|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [36]
+2017-10-13 22:23:45.5215|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [36]
+2017-10-13 22:24:39.4281|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-10-13 22:24:39.5661|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [36] successful, user authenticated
+2017-10-13 22:24:39.6675|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [36]
+2017-10-13 22:24:39.7068|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [36]
+2017-10-13 22:25:58.6127|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-10-13 22:25:58.7822|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [36] successful, user authenticated
+2017-10-13 22:25:58.8291|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [36]
+2017-10-13 22:25:58.8453|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [36]
+2017-10-13 22:26:37.8164|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [rtom]
+2017-10-13 22:26:38.0672|INFO|CoreUserService.Controllers.UserController|Login attempt for user id [36] successful, user authenticated
+2017-10-13 22:26:38.1934|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [36]
+2017-10-13 22:26:38.2407|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [36]

@@ -31,6 +31,7 @@ namespace CoreUserService.Controllers
         /// ctor
         /// </summary>
         /// <param name="userRepo">The IUserRepository implementation</param>
+        /// <param name="tokenIssuerService">The ITokenIssuerService implementation</param>
         /// <param name="logger">The ILogger implementation</param>
         public UserController(IUserRepository userRepo, ITokenIssuerService tokenIssuerService, ILogger<UserController> logger)
         {

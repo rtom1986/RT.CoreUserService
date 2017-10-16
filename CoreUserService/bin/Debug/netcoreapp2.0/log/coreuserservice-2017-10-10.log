@@ -1,0 +1,2 @@
+2017-10-10 22:31:14.4703|INFO|CoreUserService.Controllers.UserController|Begin login attempt for username [test]
+2017-10-10 22:31:15.2247|INFO|CoreUserService.Controllers.UserController|Login attempt for username [test] failed, invalid credentials
