@@ -13341,7 +13341,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rschlueter\\.nuget\\packages\\": {},
+    "C:\\Users\\richardtom\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13350,17 +13350,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\git\\CoreUserService\\CoreUserService\\CoreUserService.csproj",
+      "projectUniqueName": "C:\\git\\RT.CoreUserService\\CoreUserService\\CoreUserService.csproj",
       "projectName": "CoreUserService",
-      "projectPath": "C:\\git\\CoreUserService\\CoreUserService\\CoreUserService.csproj",
-      "packagesPath": "C:\\Users\\rschlueter\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\CoreUserService\\CoreUserService\\obj\\",
+      "projectPath": "C:\\git\\RT.CoreUserService\\CoreUserService\\CoreUserService.csproj",
+      "packagesPath": "C:\\Users\\richardtom\\.nuget\\packages\\",
+      "outputPath": "C:\\git\\RT.CoreUserService\\CoreUserService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\rschlueter\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\richardtom\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13368,7 +13368,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://corptfs01/NuGet/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -10,3 +10,15 @@ C:\git\CoreUserService\CoreUserService\obj\Debug\netcoreapp2.0\CoreUserService.A
 C:\git\CoreUserService\CoreUserService\obj\Debug\netcoreapp2.0\CoreUserService.dll
 C:\git\CoreUserService\CoreUserService\obj\Debug\netcoreapp2.0\CoreUserService.pdb
 C:\git\CoreUserService\CoreUserService\bin\Debug\netcoreapp2.0\nlog.config
+C:\git\RT.CoreUserService\CoreUserService\bin\Debug\netcoreapp2.0\nlog.config
+C:\git\RT.CoreUserService\CoreUserService\bin\Debug\netcoreapp2.0\CoreUserService.deps.json
+C:\git\RT.CoreUserService\CoreUserService\bin\Debug\netcoreapp2.0\CoreUserService.runtimeconfig.json
+C:\git\RT.CoreUserService\CoreUserService\bin\Debug\netcoreapp2.0\CoreUserService.runtimeconfig.dev.json
+C:\git\RT.CoreUserService\CoreUserService\bin\Debug\netcoreapp2.0\CoreUserService.dll
+C:\git\RT.CoreUserService\CoreUserService\bin\Debug\netcoreapp2.0\CoreUserService.pdb
+C:\git\RT.CoreUserService\CoreUserService\obj\Debug\netcoreapp2.0\CoreUserService.csprojResolveAssemblyReference.cache
+C:\git\RT.CoreUserService\CoreUserService\obj\Debug\netcoreapp2.0\CoreUserService.csproj.CoreCompileInputs.cache
+C:\git\RT.CoreUserService\CoreUserService\obj\Debug\netcoreapp2.0\CoreUserService.AssemblyInfoInputs.cache
+C:\git\RT.CoreUserService\CoreUserService\obj\Debug\netcoreapp2.0\CoreUserService.AssemblyInfo.cs
+C:\git\RT.CoreUserService\CoreUserService\obj\Debug\netcoreapp2.0\CoreUserService.dll
+C:\git\RT.CoreUserService\CoreUserService\obj\Debug\netcoreapp2.0\CoreUserService.pdb

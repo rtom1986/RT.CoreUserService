@@ -1,0 +1,16 @@
+2017-11-09 12:10:23.7531|INFO|CoreUserService.Controllers.UserController|Begin create attempt for new user
+2017-11-09 12:10:25.2995|INFO|CoreUserService.Controllers.UserController|Create attempt for new user id [1] successful, user created
+2017-11-09 12:10:25.3619|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [1]
+2017-11-09 12:10:25.3931|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [1]
+2017-11-09 12:11:38.8151|INFO|CoreUserService.Controllers.UserController|Begin create attempt for new user
+2017-11-09 12:11:38.9399|INFO|CoreUserService.Controllers.UserController|Create attempt for new user id [2] successful, user created
+2017-11-09 12:11:38.9555|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [2]
+2017-11-09 12:11:38.9867|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [2]
+2017-11-09 12:15:39.3710|INFO|CoreUserService.Controllers.UserController|Begin create attempt for new user
+2017-11-09 12:15:39.5280|INFO|CoreUserService.Controllers.UserController|Create attempt for new user id [3] successful, user created
+2017-11-09 12:15:39.5436|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [3]
+2017-11-09 12:15:39.5662|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [3]
+2017-11-09 12:21:59.3013|INFO|CoreUserService.Controllers.UserController|Begin fetch attempt for user id [3]
+2017-11-09 12:21:59.5303|INFO|CoreUserService.Controllers.UserController|Fetch attempt for user id [3] successful, user found
+2017-11-09 12:21:59.5673|INFO|CoreUserService.Services.JwtTokenIssuerService|Begin JWT generation for user id [3]
+2017-11-09 12:21:59.5953|INFO|CoreUserService.Services.JwtTokenIssuerService|JWT successfully generated for user id [3]
