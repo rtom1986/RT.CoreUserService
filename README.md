@@ -1,4 +1,4 @@
-# coreuserservice
+# RT.CoreUserService
 Service providing basic user profile functionality
 
 The idea behind this API is to provide reusable user profile functionality to apps I develop in the future.  
