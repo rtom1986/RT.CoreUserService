@@ -85,13 +85,39 @@ namespace CoreUserService.Services
         }
 
         /// <summary>
+        /// Generates a JSON Web Token
+        /// </summary>
+        /// <param name="principal">ClaimsPrincipal object</param>
+        /// <returns>Serialized JWT</returns>
+        public string RenewToken(ClaimsPrincipal principal)
+        {
+            Logger.LogInformation("Begin JWT renewal process");
+
+            //Ensure Claims object is not null
+            if (principal != null && principal.Claims != null)
+            {
+                //Extract the pertinent claim information
+                var userId = principal.Claims.FirstOrDefault(x => x.Type == "jti");
+                var userName = principal.Claims.FirstOrDefault(x => x.Type.Contains("nameidentifier"));
+                if (userId != null && userName != null)
+                {
+                    //Claim information obtained successfully
+                    return GenerateToken(Convert.ToInt64(userId.Value), userName.Value);
+                }
+            }
+
+            Logger.LogError("JWT generation fail, invalid user id or username");
+            return string.Empty;
+        }
+
+        /// <summary>
         /// Validate JWT claims against desired user id
         /// This checks to see if the JWT has the proper authorization rights
         /// </summary>
         /// <param name="principal">ClaimsPrincipal object</param>
         /// <param name="userId">User id to validate against</param>
         /// <returns>Boolean, true if claim is validated</returns>
-        public bool ValidateTokenClaim(ClaimsPrincipal principal, long userId)
+        public bool ValidateToken(ClaimsPrincipal principal, long userId)
         {
             //Init return value
             var validTokenClaim = false;

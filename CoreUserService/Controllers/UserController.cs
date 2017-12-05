@@ -105,7 +105,7 @@ namespace CoreUserService.Controllers
 
             //Success! Issue a new JWT and return user dto object
             Logger.LogInformation("Fetch attempt for user id [{0}] successful, user found", id);
-            AddJwtToResponseHeader(_tokenIssuerService.GenerateToken(userEntity.Id, userEntity.Username));
+            AddJwtToResponseHeader(_tokenIssuerService.RenewToken(User));
             return Ok(Mapper.Map<UserDto>(userEntity));
         }
 
@@ -189,7 +189,7 @@ namespace CoreUserService.Controllers
             Logger.LogInformation("Begin update attempt for user id [{0}]", id);
 
             //Validate token's claim to the specified user id
-            if (_tokenIssuerService.ValidateTokenClaim(User, id))
+            if (_tokenIssuerService.ValidateToken(User, id))
             {
                 //Ensure request body could be deserialized into the desired type
                 if (userInformationDto == null)
@@ -220,7 +220,7 @@ namespace CoreUserService.Controllers
 
                 //Success! Issue a new JWT and return no content
                 Logger.LogInformation("Update attempt for user id [{0}] successful, user updated", id);
-                AddJwtToResponseHeader(_tokenIssuerService.GenerateToken(userEntity.Id, userEntity.Username));
+                AddJwtToResponseHeader(_tokenIssuerService.RenewToken(User));
                 return NoContent();
             }
 
@@ -247,7 +247,7 @@ namespace CoreUserService.Controllers
             Logger.LogInformation("Begin update attempt for user id [{0}]", id);
 
             //Validate token's claim to the specified user id
-            if (_tokenIssuerService.ValidateTokenClaim(User, id))
+            if (_tokenIssuerService.ValidateToken(User, id))
             {
                 //Ensure request body could be deserialized into the desired type
                 if (userCredentialDto == null)
@@ -321,7 +321,7 @@ namespace CoreUserService.Controllers
 
                 //Success! Issue a new JWT and return no content
                 Logger.LogInformation("Update attempt for user id [{0}] successful, user updated", id);
-                AddJwtToResponseHeader(_tokenIssuerService.GenerateToken(userEntity.Id, userEntity.Username));
+                AddJwtToResponseHeader(_tokenIssuerService.RenewToken(User));
                 return NoContent();
             }
 
@@ -331,7 +331,7 @@ namespace CoreUserService.Controllers
         }
 
         /// <summary>
-        /// Soft-Deletes a User
+        /// Deletes a User
         /// </summary>
         /// <param name="id">User Id</param>
         /// <returns>Empty response</returns>
@@ -346,7 +346,7 @@ namespace CoreUserService.Controllers
             Logger.LogInformation("Begin delete attempt for user id [{0}]", id);
 
             //Validate token's claim to the specified user id
-            if (_tokenIssuerService.ValidateTokenClaim(User, id))
+            if (_tokenIssuerService.ValidateToken(User, id))
             {
                 //Fetch user entity
                 var userEntity = _userRepo.GetUser(id);
@@ -359,19 +359,19 @@ namespace CoreUserService.Controllers
                     return NotFound();
                 }
 
-                //Soft delete user entity
-                userEntity.Active = false;
+                //Hard delete user entity
+                _userRepo.DeleteUser(userEntity);
 
                 //Ensure entity is persisted successfully
                 if (!_userRepo.Save())
                 {
                     //Handle user save fail
                     Logger.LogError("Delete attempt for user id [{0}] failed, server error", id);
-                    return StatusCode(500, "An error occurred while soft-deleting the User");
+                    return StatusCode(500, "An error occurred while deleting the User");
                 }
 
                 //Delete success!
-                Logger.LogInformation("Delete attempt for user id [{0}] successful, user soft deleted", id);
+                Logger.LogInformation("Delete attempt for user id [{0}] successful, user deleted", id);
                 return NoContent();
             }
 
@@ -380,6 +380,10 @@ namespace CoreUserService.Controllers
             return Unauthorized();
         }
 
+        /// <summary>
+        /// Adds a JWT to the current response header
+        /// </summary>
+        /// <param name="jwt"></param>
         private void AddJwtToResponseHeader(string jwt)
         {
             //Add header to response containing the JWT value

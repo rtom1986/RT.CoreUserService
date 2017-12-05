@@ -9,13 +9,18 @@ namespace CoreUserService.Services.Interfaces
     public interface ITokenIssuerService
     {
         /// <summary>
-        /// Method implementation will generate a string session token
+        /// Method implementation will generate a serialized token
         /// </summary>
         string GenerateToken(long userId, string username);
 
         /// <summary>
-        /// Method will validate claims of the current authenticated user
+        /// Method implementation will renew a token using existing contextual claims
         /// </summary>
-        bool ValidateTokenClaim(ClaimsPrincipal principal, long userId);
+        string RenewToken(ClaimsPrincipal principal);
+
+        /// <summary>
+        /// Method implementation will validate token claims of the current authenticated user
+        /// </summary>
+        bool ValidateToken(ClaimsPrincipal principal, long userId);
     }
 }

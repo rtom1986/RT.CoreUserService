@@ -47,5 +47,11 @@ namespace CoreUserService.Repositories.Interfaces
         /// </summary>
         /// <returns>bool, true if successful</returns>
         bool Save();
+
+        /// <summary>
+        /// Repository method to delete a User entity
+        /// </summary>
+        /// <param name="user">The entity</param>
+        void DeleteUser(User user);
     }
 }

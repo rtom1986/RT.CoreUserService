@@ -30,7 +30,7 @@ namespace CoreUserService.Repositories
         /// <returns>User entity</returns>
         public User GetUser(long id)
         {
-            return _dbContext.Users.Where(x => x.Id == id && x.Active)
+            return _dbContext.Users.Where(x => x.Id == id)
                 .Include(x => x.Address)
                 .FirstOrDefault();
         }
@@ -44,7 +44,7 @@ namespace CoreUserService.Repositories
         public User GetUserByUsernameAndPassword(string username, string password)
         {
             return _dbContext.Users
-                .Where(x => x.Username == username && x.Password == password && x.Active)
+                .Where(x => x.Username == username && x.Password == password)
                 .Include(x => x.Address)
                 .FirstOrDefault();
         }
@@ -56,7 +56,7 @@ namespace CoreUserService.Repositories
         /// <returns>User entity</returns>
         public User GetUserByEmail(string email)
         {
-            return _dbContext.Users.Where(x => x.Email == email && x.Active).Include(x => x.Address).FirstOrDefault();
+            return _dbContext.Users.Where(x => x.Email == email).Include(x => x.Address).FirstOrDefault();
         }
 
         /// <summary>
@@ -66,7 +66,7 @@ namespace CoreUserService.Repositories
         /// <returns>User entity</returns>
         public User GetUserByUsername(string username)
         {
-            return _dbContext.Users.Where(x => x.Username == username && x.Active).Include(x => x.Address).FirstOrDefault();
+            return _dbContext.Users.Where(x => x.Username == username).Include(x => x.Address).FirstOrDefault();
         }
 
         /// <summary>
@@ -86,6 +86,16 @@ namespace CoreUserService.Repositories
         public bool Save()
         {
             return _dbContext.Save();
+        }
+
+        /// <summary>
+        /// Repository method to delete a User entity
+        /// </summary>
+        /// <param name="user">The entity</param>
+        public void DeleteUser(User user)
+        {
+            //Delete the user
+            _dbContext.Users.Remove(user);
         }
     }
 }
