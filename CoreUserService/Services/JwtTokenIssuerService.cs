@@ -108,7 +108,7 @@ namespace CoreUserService.Services
                 }
                 else
                 {
-                    Logger.LogError("User id [{0}] attempted to access an unauthorized resource for user id [{1}]", claim.Value, userId);
+                    Logger.LogError("User id [{0}] attempted to access an unauthorized resource for user id [{1}]", claim?.Value, userId);
                 }
             }
 
