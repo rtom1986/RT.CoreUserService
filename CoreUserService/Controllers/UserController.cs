@@ -295,18 +295,22 @@ namespace CoreUserService.Controllers
                     return BadRequest(ModelState);
                 }
 
-                //Handle credential updates
+                //Handle password updates
                 if (!string.IsNullOrWhiteSpace(userCredentialDto.NewPassword))
                 {
                     //Set password to updated value
                     userEntity.Password = userCredentialDto.NewPassword;
                 }
-                else if (!string.IsNullOrWhiteSpace(userCredentialDto.NewEmail))
+
+                //Handle email updates
+                if (!string.IsNullOrWhiteSpace(userCredentialDto.NewEmail))
                 {
                     //Set email to updated value
                     userEntity.Email = userCredentialDto.NewEmail;
                 }
-                else if (!string.IsNullOrWhiteSpace(userCredentialDto.NewUsername))
+
+                //Handle username updates
+                if (!string.IsNullOrWhiteSpace(userCredentialDto.NewUsername))
                 {
                     //Set username to updated value
                     userEntity.Username = userCredentialDto.NewUsername;
@@ -321,7 +325,7 @@ namespace CoreUserService.Controllers
 
                 //Success! Issue a new JWT and return no content
                 Logger.LogInformation("Update attempt for user id [{0}] successful, user updated", id);
-                AddJwtToResponseHeader(_tokenIssuerService.RenewToken(User));
+                AddJwtToResponseHeader(_tokenIssuerService.GenerateToken(userEntity.Id, userEntity.Username));
                 return NoContent();
             }
 
