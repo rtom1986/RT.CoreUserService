@@ -21,7 +21,7 @@ namespace CoreUserService.Controllers
         private readonly IUserRepository _userRepo;
 
         //UserRepository field
-        private readonly ITemporarytPasscodeRepository _userGuidRepo;
+        private readonly ITemporarytPasscodeRepository _tempPasscodeRepo;
 
         //TokenIssuerService field
         private readonly ITokenIssuerService _tokenIssuerService;
@@ -38,11 +38,11 @@ namespace CoreUserService.Controllers
         /// ctor
         /// </summary>
         /// <param name="userRepo">The IUserRepository implementation</param>
-        /// <param name="userGuidRepo">The IUserGuidRepository implementation</param>
+        /// <param name="tempPasscodeRepo">The ITemporarytPasscodeRepository implementation</param>
         /// <param name="tokenIssuerService">The ITokenIssuerService implementation</param>
         /// <param name="base36GeneratorService">The IBase36GeneratorService implementation</param>
         /// <param name="logger">The ILogger implementation</param>
-        public UserController(IUserRepository userRepo, ITemporarytPasscodeRepository userGuidRepo, 
+        public UserController(IUserRepository userRepo, ITemporarytPasscodeRepository tempPasscodeRepo, 
             ITokenIssuerService tokenIssuerService,
             IBase36GeneratorService base36GeneratorService,
             ILogger<UserController> logger)
@@ -51,7 +51,7 @@ namespace CoreUserService.Controllers
             _userRepo = userRepo;
 
             //Set UserGuidRepository to injected instance
-            _userGuidRepo = userGuidRepo;
+            _tempPasscodeRepo = tempPasscodeRepo;
 
             //Set TokenIssuerService to injected instance
             _tokenIssuerService = tokenIssuerService;
@@ -451,10 +451,10 @@ namespace CoreUserService.Controllers
                 Passcode = _base36GeneratorService.Generate(),
                 PasscodeExpiration = DateTime.Now.AddMinutes(10)      
             };
-            _userGuidRepo.CreateTemporaryPasscode(tempPasscode);
+            _tempPasscodeRepo.CreateTemporaryPasscode(tempPasscode);
 
             //Ensure entity is persisted successfully
-            if (!_userGuidRepo.Save())
+            if (!_tempPasscodeRepo.Save())
             {
                 //Handle temporary passcode save fail
                 Logger.LogError("Temporary passcode creation failed, server error", tempPasscode.Passcode);
@@ -465,6 +465,38 @@ namespace CoreUserService.Controllers
             Logger.LogInformation("Created temporary passcode [{0}] for username [{1}]", tempPasscode.Passcode, user.Username);
 
             return NoContent();
+        }
+
+        /// <summary>
+        /// Authenticates a User based on a temporary passcode
+        /// If successful, a JWT is issued and added to the response header.
+        /// </summary>
+        /// <param name="passcode">Temporary Passcode</param>
+        /// <returns>The User, if authenticated</returns>
+        /// <response code="200">OK</response>
+        /// <response code="401">Unauthorized</response>
+        [AllowAnonymous]
+        [HttpGet("tempPasscode")]
+        public IActionResult RedeemTemporaryPasscode([FromQuery] string passcode)
+        {
+            Logger.LogInformation("Begin temp passcode redeem attempt for passcode [{0}]", passcode);
+
+            //Fetch temporary passcode entity
+            var passcodeEntity = _tempPasscodeRepo.GetTemporaryPasscode(passcode);
+
+            //Check if temporary passcode entity was found
+            if (passcodeEntity == null)
+            {
+                Logger.LogInformation("Temp passcode redeem attempt for passcode [{0}] failed, invalid code", passcode);
+
+                //Handle redeem failure
+                return Unauthorized();
+            }
+
+            //Success! Issue a new JWT and return user dto object
+            Logger.LogInformation("Temp passcode redeem attempt for user id [{0}] successful, user authenticated", passcodeEntity.UserId);
+            AddJwtToResponseHeader(_tokenIssuerService.GenerateToken(passcodeEntity.UserId, passcodeEntity.User.Username));
+            return Ok(Mapper.Map<UserDto>(passcodeEntity.User));
         }
 
         /// <summary>

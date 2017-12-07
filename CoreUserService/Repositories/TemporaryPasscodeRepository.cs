@@ -33,6 +33,7 @@ namespace CoreUserService.Repositories
         {
             return _dbContext.TemporaryPasscodes.Where(x => x.Passcode == code && x.PasscodeExpiration > DateTime.Now)
                 .Include(x => x.User)
+                .Include(x => x.User.Address)
                 .FirstOrDefault();
         }
 
