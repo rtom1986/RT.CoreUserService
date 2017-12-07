@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace CoreUserService.Migrations
 {
-    public partial class Init : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -55,11 +55,43 @@ namespace CoreUserService.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "TemporaryPasscodes",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Passcode = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    PasscodeExpiration = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UserId = table.Column<long>(type: "bigint", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TemporaryPasscodes", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_TemporaryPasscodes_Users_UserId",
+                        column: x => x.UserId,
+                        principalTable: "Users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Address_UserId",
                 table: "Address",
                 column: "UserId",
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_TemporaryPasscodes_Passcode",
+                table: "TemporaryPasscodes",
+                column: "Passcode",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_TemporaryPasscodes_UserId",
+                table: "TemporaryPasscodes",
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Users_Email",
@@ -78,6 +110,9 @@ namespace CoreUserService.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Address");
+
+            migrationBuilder.DropTable(
+                name: "TemporaryPasscodes");
 
             migrationBuilder.DropTable(
                 name: "Users");

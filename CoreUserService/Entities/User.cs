@@ -39,6 +39,7 @@ namespace CoreUserService.Entities
         /// <summary>
         /// The hashed password for the User
         /// </summary>
+        [Required]
         [MinLength(7)]
         [MaxLength(50)]
         public string Password { get; set; }

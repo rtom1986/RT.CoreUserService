@@ -79,12 +79,16 @@ namespace CoreUserService
 
             //Add Repositories to the container
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ITemporarytPasscodeRepository, TemporaryPasscodeRepository>();
 
             //Add logging to the container
             services.AddLogging();
 
             //Add ITokenIssuerService to the container
             services.AddScoped<ITokenIssuerService, JwtTokenIssuerService>();
+
+            //Add IBase36GeneratorService to the container
+            services.AddScoped<IBase36GeneratorService, Base36GeneratorService>();
         }
 
         /// <summary>

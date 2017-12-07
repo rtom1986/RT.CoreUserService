@@ -11,8 +11,8 @@ using System;
 namespace CoreUserService.Migrations
 {
     [DbContext(typeof(DomainDbContext))]
-    [Migration("20170922171224_Init")]
-    partial class Init
+    [Migration("20171207200353_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -57,6 +57,28 @@ namespace CoreUserService.Migrations
                         .IsUnique();
 
                     b.ToTable("Address");
+                });
+
+            modelBuilder.Entity("CoreUserService.Entities.TemporaryPasscode", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Passcode")
+                        .IsRequired();
+
+                    b.Property<DateTime>("PasscodeExpiration");
+
+                    b.Property<long>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Passcode")
+                        .IsUnique();
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("TemporaryPasscodes");
                 });
 
             modelBuilder.Entity("CoreUserService.Entities.User", b =>
@@ -107,6 +129,14 @@ namespace CoreUserService.Migrations
                     b.HasOne("CoreUserService.Entities.User", "User")
                         .WithOne("Address")
                         .HasForeignKey("CoreUserService.Entities.Address", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("CoreUserService.Entities.TemporaryPasscode", b =>
+                {
+                    b.HasOne("CoreUserService.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

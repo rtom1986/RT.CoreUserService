@@ -14,6 +14,11 @@ namespace CoreUserService.Repositories
         public DbSet<User> Users { get; set; }
 
         /// <summary>
+        /// UserGuid db set
+        /// </summary>
+        public DbSet<TemporaryPasscode> TemporaryPasscodes { get; set; }
+
+        /// <summary>
         /// UserRepository constructor
         /// </summary>
         public DomainDbContext(DbContextOptions options) : base(options)
@@ -42,6 +47,9 @@ namespace CoreUserService.Repositories
 
             //Build User.Email Unique Index
             modelBuilder.Entity<User>().HasIndex(c => c.Email).IsUnique();
+
+            //Build UserGuid.Guid Unique Index
+            modelBuilder.Entity<TemporaryPasscode>().HasIndex(c => c.Passcode).IsUnique();
 
             //Define User/Address Relationship
             modelBuilder.Entity<User>()

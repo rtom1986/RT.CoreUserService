@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System;
+using AutoMapper;
 using CoreUserService.Entities;
 using CoreUserService.Models;
 using CoreUserService.Repositories.Interfaces;
@@ -19,8 +20,14 @@ namespace CoreUserService.Controllers
         //UserRepository field
         private readonly IUserRepository _userRepo;
 
+        //UserRepository field
+        private readonly ITemporarytPasscodeRepository _userGuidRepo;
+
         //TokenIssuerService field
         private readonly ITokenIssuerService _tokenIssuerService;
+
+        //Base36GeneratorService field
+        private readonly IBase36GeneratorService _base36GeneratorService;
 
         /// <summary>
         /// ILogger property
@@ -31,15 +38,26 @@ namespace CoreUserService.Controllers
         /// ctor
         /// </summary>
         /// <param name="userRepo">The IUserRepository implementation</param>
+        /// <param name="userGuidRepo">The IUserGuidRepository implementation</param>
         /// <param name="tokenIssuerService">The ITokenIssuerService implementation</param>
+        /// <param name="base36GeneratorService">The IBase36GeneratorService implementation</param>
         /// <param name="logger">The ILogger implementation</param>
-        public UserController(IUserRepository userRepo, ITokenIssuerService tokenIssuerService, ILogger<UserController> logger)
+        public UserController(IUserRepository userRepo, ITemporarytPasscodeRepository userGuidRepo, 
+            ITokenIssuerService tokenIssuerService,
+            IBase36GeneratorService base36GeneratorService,
+            ILogger<UserController> logger)
         {
             //Set UserRepository to injected instance
             _userRepo = userRepo;
 
+            //Set UserGuidRepository to injected instance
+            _userGuidRepo = userGuidRepo;
+
             //Set TokenIssuerService to injected instance
             _tokenIssuerService = tokenIssuerService;
+
+            //Set Base36GeneratorService to injected instance
+            _base36GeneratorService = base36GeneratorService;
 
             //Set logger to injected instance
             Logger = logger;
@@ -382,6 +400,71 @@ namespace CoreUserService.Controllers
             //Handle authorization failure
             Logger.LogInformation("Delete attempt for user id [{0}] failed, not authorized", id);
             return Unauthorized();
+        }
+
+        /// <summary>
+        /// Creates a temporary passcode and sends it to the User's email
+        /// </summary>
+        /// <param name="username">Username</param>
+        /// <param name="email">Email</param>
+        /// <returns>No content</returns>
+        /// <response code="204">No Content</response>
+        /// <response code="400">Bad Request</response>
+        /// <response code="500">Server Error</response>
+        [AllowAnonymous]
+        [HttpPut("tempPasscode")]
+        public IActionResult RequestTemporaryPasscode([FromQuery] string username = null, [FromQuery] string email = null)
+        {
+            //Ensure at least one of the required parameters is present
+            if (string.IsNullOrWhiteSpace(username) && string.IsNullOrWhiteSpace(email))
+            {
+                //Handle 400 Bad Request
+                Logger.LogInformation("Issue temporary passcode failed, bad request");
+                return BadRequest();
+            }
+
+            //User requesting temporary passcode
+            User user = null;
+
+            //Attempt to fetch a user with the provided information
+            if (!string.IsNullOrWhiteSpace(username))
+            {
+                user = _userRepo.GetUserByUsername(username);
+            }
+            else if (!string.IsNullOrWhiteSpace(email))
+            {
+                user = _userRepo.GetUserByEmail(email);
+            }
+
+            //Ensure a User entity was fetched
+            if (user == null)
+            {
+                //User not found (Normally a 404, but we do not want to disclose in this case)
+                Logger.LogInformation("Unable to find a User with the information provided, returning no content");
+                return NoContent();
+            }
+
+            //Create temporary passcode
+            var tempPasscode = new TemporaryPasscode()
+            {
+                UserId = user.Id,
+                Passcode = _base36GeneratorService.Generate(),
+                PasscodeExpiration = DateTime.Now.AddMinutes(10)      
+            };
+            _userGuidRepo.CreateTemporaryPasscode(tempPasscode);
+
+            //Ensure entity is persisted successfully
+            if (!_userGuidRepo.Save())
+            {
+                //Handle temporary passcode save fail
+                Logger.LogError("Temporary passcode creation failed, server error", tempPasscode.Passcode);
+                return StatusCode(500, "An error occurred while creating the temporary passcode");
+            }
+
+            //TODO Send email to User
+            Logger.LogInformation("Created temporary passcode [{0}] for username [{1}]", tempPasscode.Passcode, user.Username);
+
+            return NoContent();
         }
 
         /// <summary>

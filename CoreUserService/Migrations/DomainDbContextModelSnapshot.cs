@@ -58,6 +58,28 @@ namespace CoreUserService.Migrations
                     b.ToTable("Address");
                 });
 
+            modelBuilder.Entity("CoreUserService.Entities.TemporaryPasscode", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Passcode")
+                        .IsRequired();
+
+                    b.Property<DateTime>("PasscodeExpiration");
+
+                    b.Property<long>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Passcode")
+                        .IsUnique();
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("TemporaryPasscodes");
+                });
+
             modelBuilder.Entity("CoreUserService.Entities.User", b =>
                 {
                     b.Property<long>("Id")
@@ -106,6 +128,14 @@ namespace CoreUserService.Migrations
                     b.HasOne("CoreUserService.Entities.User", "User")
                         .WithOne("Address")
                         .HasForeignKey("CoreUserService.Entities.Address", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("CoreUserService.Entities.TemporaryPasscode", b =>
+                {
+                    b.HasOne("CoreUserService.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
