@@ -29,7 +29,7 @@ namespace CoreUserService.Services
         /// </summary>
         /// <param name="configuration">IConfiguration implementation to be injected</param>
         /// <param name="logger">The ILogger implementation</param>
-        public SmtpEmailService(IConfiguration configuration, ILogger<JwtTokenIssuerService> logger)
+        public SmtpEmailService(IConfiguration configuration, ILogger<SmtpEmailService> logger)
         {
             //Set injected IConfiguration value
             _configuration = configuration;
