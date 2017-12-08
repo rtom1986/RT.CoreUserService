@@ -11,6 +11,6 @@ Basic functions being:
 4) Delete User
 5) Login (Issue JWT)
 6) Request Temporary Passcode (Email sent to User with code)
-7) Reset Credentials (Using passcode from email)
+7) Redeem Temporary Passcode (Using passcode from email)
 
 User sessions are managed by JSON Web Tokens, which allow for a stateless, scalable service.
