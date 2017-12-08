@@ -29,6 +29,9 @@ namespace CoreUserService.Controllers
         //Base36GeneratorService field
         private readonly IBase36GeneratorService _base36GeneratorService;
 
+        //IEmailService field
+        private readonly IEmailService _emailService;
+
         /// <summary>
         /// ILogger property
         /// </summary>
@@ -41,10 +44,13 @@ namespace CoreUserService.Controllers
         /// <param name="tempPasscodeRepo">The ITemporarytPasscodeRepository implementation</param>
         /// <param name="tokenIssuerService">The ITokenIssuerService implementation</param>
         /// <param name="base36GeneratorService">The IBase36GeneratorService implementation</param>
+        /// <param name="emailService">The IEmailService implementation</param>
         /// <param name="logger">The ILogger implementation</param>
-        public UserController(IUserRepository userRepo, ITemporarytPasscodeRepository tempPasscodeRepo, 
+        public UserController(IUserRepository userRepo, 
+            ITemporarytPasscodeRepository tempPasscodeRepo, 
             ITokenIssuerService tokenIssuerService,
             IBase36GeneratorService base36GeneratorService,
+            IEmailService emailService,
             ILogger<UserController> logger)
         {
             //Set UserRepository to injected instance
@@ -58,6 +64,9 @@ namespace CoreUserService.Controllers
 
             //Set Base36GeneratorService to injected instance
             _base36GeneratorService = base36GeneratorService;
+
+            //Set EmailService to injected instance
+            _emailService = emailService;
 
             //Set logger to injected instance
             Logger = logger;
@@ -461,8 +470,9 @@ namespace CoreUserService.Controllers
                 return StatusCode(500, "An error occurred while creating the temporary passcode");
             }
 
-            //TODO Send email to User
+            //Send email to User
             Logger.LogInformation("Created temporary passcode [{0}] for username [{1}]", tempPasscode.Passcode, user.Username);
+            _emailService.Send(user.Email, $"Your Username is {user.Username}.\n\nYour temporary passcode is {tempPasscode.Passcode}");
 
             return NoContent();
         }

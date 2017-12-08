@@ -34,12 +34,15 @@ namespace CoreUserService.Services
         /// <returns>7 character, base 36 string</returns>
         public string Generate()
         {
+            Logger.LogInformation("Attempting to generate random base 36 temporary passcode");
             var random = new Random();
             var sb = new StringBuilder(7);
             for (var i = 0; i < 7; i++)
             {
                 sb.Append(Base36Chars[random.Next(36)]);
-            }           
+            }
+
+            Logger.LogInformation("Base 36 temporary passcode generated: {0}", sb.ToString());
             return sb.ToString();
         }
     }

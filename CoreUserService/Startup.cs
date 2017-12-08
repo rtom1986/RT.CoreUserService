@@ -89,6 +89,9 @@ namespace CoreUserService
 
             //Add IBase36GeneratorService to the container
             services.AddScoped<IBase36GeneratorService, Base36GeneratorService>();
+
+            //Add IEmailService to the container
+            services.AddScoped<IEmailService, SmtpEmailService>();
         }
 
         /// <summary>
